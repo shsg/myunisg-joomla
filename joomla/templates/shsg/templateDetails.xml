@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension
+	version="1.6"
+	type="template"
+	client="site">
+	<name>shsg</name>
+	<creationDate>01/04/11</creationDate>
+	<author>Byteplex Solutions GmbH</author>
+	<authorEmail>office@byteplex.at</authorEmail>
+	<authorUrl>http://www.byteplex.at</authorUrl>
+	<copyright>Copyright (C) 2011 Byteplex Solutions GmbH. All rights reserved.</copyright>
+	<license>non public license</license>
+	<version>1.6.0</version>
+	<description>TPL_SHSG_XML_DESCRIPTION</description>
+	<files>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+		<folder>js</folder>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+	</files>
+
+	<positions>
+		<position>shsg-page-sidebar</position>
+		<position>shsg-front-sidebar</position>
+		<position>shsg-front-news</position>
+		<position>shsg-front-events</position>
+		<position>shsg-front-content</position>
+		<position>shsg-front-votebanner</position>
+		<position>shsg-topmenu</position>
+		<position>shsg-footer</position>
+		<position>shsg-search</position>
+		<position>shsg-topquote</position>
+		<position>shsg-invisible</position>
+		<position>shsg-precomponent</position>
+		<position>shsg-postcomponent</position>
+	</positions>
+
+	<!-- 	For core templates, we also install/uninstall the language files in the core language folders.
+	-->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_shsg.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_shsg.sys.ini</language>
+	</languages>
+
+</extension>

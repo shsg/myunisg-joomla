@@ -1,0 +1,25 @@
+TODO 
+ * Bildgrößen überprüfen
+ * Kategorien-struktur erstellen, main articles einpflegen
+ * Google XML Sitemap
+ * Main Content: links, bilder, listen, header, tabellen stylen
+ * Submenu TEMP löschen
+ * Rollen definieren und zuteilen
+ * Weiterleitung auf die alten Links via .htaccess oder besser: via Redirect-Plugin von Joomla 1.6
+
+
+ * Wahlskript: Anbindung an SHSG-Service (via Plugin; derzeit Gmail-Code als Platzhalter), Nur Nummern als Username
+ 
+ 
+ * Facebook-Kommentarfunktion
+ * Feedback-Formular (Theresa)
+
+ 
+ 
+ 
+FRAGEN
+ - Menü-URLs auf Englisch?
+ - Kleines Menü unter Social networks - was damit machen? ist in php auskommentiert
+ - Wir brauchen von euch Impressum und Disclaimer (Disclaimer bzgl. Content externer Links/Seiten)
+ - alles auf Deutsch => NO!
+ - Telefonbuch?

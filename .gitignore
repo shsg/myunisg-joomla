@@ -1,3 +1,7 @@
+.svn
+*.php~
+*.xml~
+*.html~
 joomla/.gitignore
 joomla/.htaccess
 joomla/administrator/cache/*

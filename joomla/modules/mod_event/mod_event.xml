@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+	<name>mod_event</name>
+	<author>Byteplex Solutions GmbH</author>
+	<creationDate>June 2011</creationDate>
+	<copyright>Copyright (C) 2011 Byteplex Solutions GmbH. All rights reserved.</copyright>
+	<license></license>
+	<authorEmail>office@byteplex.at</authorEmail>
+	<authorUrl>www.byteplex.at</authorUrl>
+	<version>1.0.0</version>
+	<description></description>
+	<files>
+		<filename module="mod_event">mod_event.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="num_events"
+					type="text"
+					label="Events to display"
+					description=""
+					default="5">
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
