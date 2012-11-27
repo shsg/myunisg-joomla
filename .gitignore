@@ -436,3 +436,5 @@ joomla/index.php
 joomla/joomla.xml
 joomla/*.txt
 .DS_Store
+
+fabfile.pyc

@@ -10,12 +10,12 @@ defined('_JEXEC') or die('Restricted access');
   <?php foreach($clubs as $club) : ?>
     <tr class="club-<?php echo $club->id; ?> club-title">
       <td><?php echo $club->name; ?></td>
-      <td><a target="_blank" href="http://<?php echo $club->website; ?>"><?php echo $club->website; ?></a></td> 
+      <td><a target="_blank" href="http://<?php echo $club->website; ?>"><?php echo $club->website; ?></a></td>
       <td>
         <?php if($club->file_constitution != '') : ?>
-        <a href="<?php echo $club->file_constitution; ?>">Statute downloaden</a>
+        <a href="<?php echo $club->file_constitution; /* Hier /joomla abschneiden */ ?>">Statute downloaden</a>
         <?php endif; ?>
-      </td>        
+      </td>
       <td><a href="#">Details</a></td>
     </tr>
     <tr class="club-<?php echo $club->id; ?>-details club-details">
@@ -27,8 +27,8 @@ defined('_JEXEC') or die('Restricted access');
         <?php echo $club->address1 == '' ? '' : $club->address1 . '<br />'; ?>
         <?php echo $club->address2 == '' ? '' : $club->address2 . '<br />'; ?>
         <?php echo $club->address3 == '' ? '' : $club->address3 . '<br />'; ?>
-        <?php echo $club->zip . '&nbsp;' . $club->city; ?>      
-      </td>      
+        <?php echo $club->zip . '&nbsp;' . $club->city; ?>
+      </td>
     </tr>
   <?php endforeach; ?>
   </table>
