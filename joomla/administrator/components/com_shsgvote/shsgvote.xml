@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>com_shsgvote</name>
+    <creationDate>2011-09-27</creationDate>
+    <author>Dominik Aumayr</author>
+    <authorEmail>dominik.aumayr@gmail.com</authorEmail>
+    <authorUrl>www.byteplex.at</authorUrl>
+    <copyright></copyright>
+    <license></license>
+    <version>1.0</version>
+    <description></description>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>shsgvote.php</filename>
+        <filename>controller.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>helpers</folder>
+    </files>
+    
+    <administration>
+        
+    </administration>
+
+    <!-- <media destination="com_hsgics" folder="media">
+        <filename>index.html</filename>
+        <folder>images</folder>
+    </media> -->
+</extension>

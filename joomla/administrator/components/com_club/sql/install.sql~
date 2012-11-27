@@ -1,0 +1,28 @@
+DROP TABLE IF EXISTS #__clubs;
+
+CREATE TABLE #__clubs (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(200) NOT NULL,
+  name_short varchar(400) DEFAULT NULL,
+  year_founded int(4),
+  description text,
+  description_short varchar(500) DEFAULT NULL,
+  address1 varchar(200) DEFAULT NULL,
+  address2 varchar(200) DEFAULT NULL,
+  address3 varchar(200) DEFAULT NULL,
+  zip varchar(200) NOT NULL,
+  city varchar(200) NOT NULL,
+  email varchar(400) NOT NULL,
+  website varchar(400) NOT NULL,
+  is_active varchar(1) NOT NULL DEFAULT 'N',
+  is_visible varchar(1) NOT NULL DEFAULT 'N',
+  is_external varchar(1) NOT NULL DEFAULT 'N',
+  file_logo varchar(400) DEFAULT NULL,
+  file_constitution varchar(400) DEFAULT NULL,
+  category_id int(11) DEFAULT NULL,
+  manager_user_id int(11) DEFAULT NULL,
+  record_updated timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  record_updated_user varchar(400) DEFAULT NULL,
+  record_visible varchar(1) NOT NULL DEFAULT 'N',
+  PRIMARY KEY (id)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=100 ;

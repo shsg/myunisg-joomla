@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>com_club</name>
+	<creationDate>03.07.2011</creationDate>
+	<author>Byteplex Solutions GmbH</author>
+	<authorEmail>office@byteplex.at</authorEmail>
+	<authorUrl>www.byteplex.at</authorUrl>
+	<copyright>2011 Byteplex Solutions GmbH</copyright>
+	<license></license>
+	<version>1.2</version>
+	<description></description>
+	<install>
+	<sql>
+	  <file driver="mysql" charset="utf8">sql/install.sql</file>
+	</sql>
+	</install>
+	<uninstall>
+	<sql>
+	  <file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+	</sql>
+	</uninstall>
+	<update>
+		<sql>
+			<file driver="mysql">sql/update.sql</file>
+		</sql>
+	</update>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>club.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>helpers</folder>
+	</files>
+
+	<media destination="com_club" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../media/com_club/images/icon16.png">COM_CLUB_MENU</menu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<filename>club.php</filename>
+			<filename>controller.php</filename>
+			<folder>views</folder>
+			<folder>models</folder>
+			<folder>helpers</folder>
+			<folder>controllers</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_club.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_club.sys.ini</language>
+			<language tag="en-DE">language/de-DE/de-DE.com_club.ini</language>
+			<language tag="en-DE">language/de-DE/de-DE.com_club.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

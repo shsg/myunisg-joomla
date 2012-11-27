@@ -1,0 +1,40 @@
+<?php
+// No direct access to this file
+defined('_JEXEC') or die('Restricted access');
+$user =& JFactory::getUser();
+?>
+<h1>Wahl der Gremienvertreter im Studentenparlament (StuPa) HS12/FS13</h1>
+
+<p>
+    W&auml;hle einen oder mehrere Kandidaten und klicke auf "Abstimmen". Informationen zu den Kandidaten findest du auf den Plakatw&auml;nden im B-Geb&auml;ude.
+</p>
+<form action="/vote.html?task=vote" method="post" accept-charset="utf-8">
+    <?php if (false) { //}(!ShsgvoteHelper::isInGroup("maccfin", $user->name) && !ShsgvoteHelper::isInGroup("sim", $user->name)) { ?>
+        <strong>F&uuml;r dein Programm steht leider kein Kandidat zur Auswahl bzw. es wurde schon ein Kandidat w&auml;hrend der Programmvertreter-Wahlen gew&auml;hlt.</strong>
+    <?php } else {?>
+
+        <?php if (true) { // }(ShsgvoteHelper::isInGroup("maccfin", $user->name)) { ?>
+        <h2>Senat</h2>
+        <ul style="list-style-type: none;">
+            <li><input type="checkbox" name="vote_senat[]" value="SENAT01">&nbsp;&nbsp;Bischof, Severin</li>
+            <li><input type="checkbox" name="vote_senat[]" value="SENAT02">&nbsp;&nbsp;Huber, Jana</li>
+            <li><input type="checkbox" name="vote_senat[]" value="SENAT03">&nbsp;&nbsp;Ehrensperger, Lukas F.</li>
+            <li><input type="checkbox" name="vote_senat[]" value="SENAT04">&nbsp;&nbsp;Sailer, Paul</li>
+            <li><input type="checkbox" name="vote_senat[]" value="SENAT05">&nbsp;&nbsp;B&auml;uml, Andreas</li>
+            <li><input type="checkbox" name="vote_senat[]" value="SENAT06">&nbsp;&nbsp;Knaut, Can</li>
+            <li><input type="checkbox" name="vote_senat[]" value="SENAT07">&nbsp;&nbsp;Brügger, Lukas</li>
+            <li><input type="checkbox" name="vote_senat[]" value="SENAT08">&nbsp;&nbsp;Jansen, Klemens</li>
+            <li><input type="checkbox" name="vote_senat[]" value="SENAT09">&nbsp;&nbsp;Mouny, Leonard</li>
+            <li><input type="checkbox" name="vote_senat[]" value="SENAT10">&nbsp;&nbsp;Bekemeier, Sebastian</li>
+            <li><input type="checkbox" name="vote_senat[]" value="SENAT11">&nbsp;&nbsp;Gertsch, Gabriel</li>
+        </ul>
+        <br>
+        <?php } ?>
+
+        <input type="hidden" name="form_sent" value="YES">
+        <p><input type="submit" value="Abstimmen &rarr;"></p>
+        <p>
+            <em>Nach erfolgreicher Stimmabgabe wirst du automatisch ausgeloggt und einer Best&auml;tigungsseite weitergeleitet.</em>
+        </p>
+    <?php } ?>
+</form>
